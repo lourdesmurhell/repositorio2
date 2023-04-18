@@ -30,19 +30,46 @@ header {
 }
 
 h1 {
-  font-family: 'Rampart One', cursive;
-  margin: 0;
-  color: $color-texto-header;
+    font-family: 'Rampart One', cursive;
+    margin: 0;
+    color: $color-texto-header;
+
+    // Animación de desplazamiento (traslación)
+    animation: slide 2s linear infinite; // Agrega la animación de desplazamiento con una duración de 2 segundos, una función de tiempo lineal y la repetición infinita
+  
+    @keyframes slide {
+        0% {
+            transform: translateY(0); // Define la traslación inicial (0 píxeles hacia arriba)
+        }
+        50% {
+            transform: translateY(-10px); // Define la traslación intermedia (-10 píxeles hacia arriba)
+        }
+        100% {
+            transform: translateY(0); // Define la traslación final (0 píxeles hacia arriba)
+        }
+    }
 }
 
+  
+
 nav ul {
-  list-style: none;
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
+    list-style: none;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  
+    // Animación de transición
+    transition: transform 0.3s ease-in-out; // Agrega la animación de transición para la propiedad transform
+    transform-origin: center; // Define el punto de origen de la transformación
+  
+    // Estilos al pasar el ratón por encima
+    &:hover {
+      transform: scale(1.1); // Define la transformación al pasar el ratón por encima (puedes ajustar el valor según tus preferencias)
+    }
+  }
+  
 
 nav li {
   font-family: 'Shantell Sans', cursive;
@@ -84,9 +111,11 @@ main {
   overflow: scroll;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  /* 3 columnas iguales */
   grid-template-rows: auto;
+  /* filas ajustables */
   grid-gap: 20px;
-
+  /* espacio entre elementos */
 }
 
 footer {
@@ -105,114 +134,4 @@ section {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px $color-sombra-item;
-}
-/* Estilos de la página index */
-$background-color: #26547C;
-$primary-color: #EF476F;
-$accent-color: #FFD166;
-$section-bg-color: rgba(0, 0, 0, 0.8);
-
-body {
-  background-color: $background-color;
-  margin: 0;
-  background-image: url(https://cdn.pixabay.com/photo/2020/03/21/02/26/pizza-4952508_960_720.jpg);
-  background-size: cover;
-  height: 100%;
-}
-
-header {
-  background-color: $primary-color;
-  padding: 20px;
-  text-align: center;
-  margin-top: 20px;
-}
-
-h1 {
-  font-family: 'Rampart One', cursive;
-  margin: 0;
-  color: $accent-color;
-}
-
-nav ul {
-  list-style: none;
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-nav li {
-  font-family: 'Shantell Sans', cursive;
-  margin: 0 20px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #FFF;
-  font-size: 1.2em;
-}
-
-main {
-  overflow: auto;
-  height: calc(100% - 120px);
-  overflow: scroll;
-
-  section {
-    color: white;
-    font-family: 'Rampart One', sans-serif;
-
-    h2 {
-      color: $accent-color;
-    }
-
-    h3 {
-      color: $accent-color;
-    }
-  }
-}
-
-#menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
-
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  h2 {
-    font-family: 'Rampart One', sans-serif;
-    font-size: 36px;
-    margin: 0 0 20px;
-  }
-
-  .item {
-    background-color: $section-bg-color;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width: 300px;
-    text-align: center;
-    margin-bottom: 20px;
-
-    img {
-      max-width: 100%;
-    }
-
-    h3 {
-      font-family: 'Shantell Sans', cursive;
-      font-size: 24px;
-      margin: 0;
-    }
-
-    p {
-      margin: 10px 0 0;
-      color: #FFF;
-    }
-  }
 }
