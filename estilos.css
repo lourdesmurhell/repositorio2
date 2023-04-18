@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Estilos de la página index */
 body {
   background-color: #26547C;
@@ -15,7 +16,7 @@ header {
 }
 
 h1 {
-  font-family: 'Rampart One', cursive;
+  font-family: "Rampart One", cursive;
   margin: 0;
   color: #FFD166;
 }
@@ -30,7 +31,7 @@ nav ul {
 }
 
 nav li {
-  font-family: 'Shantell Sans', cursive;
+  font-family: "Shantell Sans", cursive;
   margin: 0 20px;
 }
 
@@ -45,7 +46,7 @@ nav a {
   font-family: sans-serif;
   padding: 2px;
   height: 10px;
-  grid-column: 1 / -1;
+  grid-column: 1/-1;
 }
 
 #haciendo-historia,
@@ -93,6 +94,7 @@ section {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
 /* Estilos menu */
 body {
   background-color: #26547C;
@@ -110,7 +112,7 @@ header {
 }
 
 h1 {
-  font-family: 'Rampart One', cursive;
+  font-family: "Rampart One", cursive;
   margin: 0;
   color: #FFD166;
 }
@@ -125,7 +127,7 @@ nav ul {
 }
 
 nav li {
-  font-family: 'Shantell Sans', cursive;
+  font-family: "Shantell Sans", cursive;
   margin: 0 20px;
 }
 
@@ -143,7 +145,7 @@ main {
 
 section {
   color: white;
-  font-family: 'Rampart One', sans-serif;
+  font-family: "Rampart One", sans-serif;
 }
 
 h2 {
@@ -169,7 +171,7 @@ h3 {
 }
 
 #menu h2 {
-  font-family: 'Rampart One', sans-serif;
+  font-family: "Rampart One", sans-serif;
   font-size: 36px;
   margin: 0 0 20px;
 }
@@ -189,7 +191,7 @@ h3 {
 }
 
 #menu .item h3 {
-  font-family: 'Shantell Sans', cursive;
+  font-family: "Shantell Sans", cursive;
   font-size: 24px;
   margin: 0;
 }
@@ -205,43 +207,36 @@ h3 {
   header {
     padding: 10px;
   }
-
   nav ul {
     flex-direction: column;
   }
-
   nav li {
     margin: 10px 0;
   }
-
   main {
     grid-template-columns: 1fr;
   }
-
   footer {
     font-size: 12px;
   }
 }
-
 /* Desktop */
 @media only screen and (min-width: 600px) {
   header {
     padding: 20px;
   }
-
   nav ul {
     flex-direction: row;
   }
-
   nav li {
     margin: 0 20px;
   }
-
   main {
     grid-template-columns: repeat(3, 1fr);
   }
-
   footer {
     font-size: 15px;
   }
 }
+
+/*# sourceMappingURL=estilos.css.map */
