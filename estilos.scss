@@ -346,47 +346,52 @@ main {
 }
 
 /*Reservas*/
+// Estilos para el formulario de reserva
 .formulario-reserva {
-  width: 100%;
+  background-color: $color-fondo-item;
+  color: $color-texto-item-titulo;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px $color-sombra-item;
 
-  h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-
+  // Estilos para los campos de entrada
   label {
     display: block;
-    font-size: 14px;
+    margin-top: 10px;
     font-weight: bold;
-    margin-bottom: 5px;
   }
 
   input[type="text"],
-  input[type="email"],
-  textarea {
+  input[type="tel"],
+  input[type="date"],
+  input[type="time"],
+  input[type="number"] {
+    display: block;
+    margin-top: 5px;
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
+    font-size: 16px;
     border-radius: 5px;
-
-    &:focus {
-      border-color: #007bff;
-      box-shadow: 0 0 5px #007bff;
-    }
+    border: none;
+    box-shadow: inset 0 0 5px $color-sombra-item;
   }
 
-  .boton {
-    background-color: #007bff;
-    color: #fff;
+  // Estilos para el botón de envío
+  button[type="submit"] {
+    display: block;
+    margin-top: 20px;
     padding: 10px 20px;
+    background-color: $color-fondo-menu;
+    color: $color-texto-menu-titulo;
+    border: none;
     border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
 
+    // Estilos al pasar el ratón por encima
     &:hover {
-      background-color: #0062cc;
+      background-color: lighten($color-fondo-menu, 10%);
     }
   }
 }

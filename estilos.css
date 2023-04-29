@@ -285,44 +285,45 @@ main {
 
 /*Reservas*/
 .formulario-reserva {
-  width: 100%;
-}
-.formulario-reserva h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #FFF;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .formulario-reserva label {
   display: block;
-  font-size: 14px;
+  margin-top: 10px;
   font-weight: bold;
-  margin-bottom: 5px;
 }
 .formulario-reserva input[type=text],
-.formulario-reserva input[type=email],
-.formulario-reserva textarea {
+.formulario-reserva input[type=tel],
+.formulario-reserva input[type=date],
+.formulario-reserva input[type=time],
+.formulario-reserva input[type=number] {
+  display: block;
+  margin-top: 5px;
   width: 100%;
   padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
+  font-size: 16px;
   border-radius: 5px;
+  border: none;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
 }
-.formulario-reserva input[type=text]:focus,
-.formulario-reserva input[type=email]:focus,
-.formulario-reserva textarea:focus {
-  border-color: #007bff;
-  box-shadow: 0 0 5px #007bff;
-}
-.formulario-reserva .boton {
-  background-color: #007bff;
-  color: #fff;
+.formulario-reserva button[type=submit] {
+  display: block;
+  margin-top: 20px;
   padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #FFD166;
+  border: none;
   border-radius: 5px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
 }
-.formulario-reserva .boton:hover {
-  background-color: #0062cc;
+.formulario-reserva button[type=submit]:hover {
+  background-color: rgba(26, 26, 26, 0.8);
 }
 
 /*# sourceMappingURL=estilos.css.map */
