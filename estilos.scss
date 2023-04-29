@@ -33,7 +33,7 @@ h1 {
     margin: 0;
     color: $color-texto-header;
 
-    // Animación de desplazamiento (traslación)
+    // Animación
     animation: slide 2s linear infinite; 
   
     @keyframes slide {
@@ -58,13 +58,13 @@ nav ul {
     display: flex;
     justify-content: center;
   
-    // Animación de transición
-    transition: transform 0.3s ease-in-out; // Agrega la animación de transición para la propiedad transform
-    transform-origin: center; // Define el punto de origen de la transformación
+    // Animación
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center; 
   
-    // Estilos al pasar el ratón por encima
+
     &:hover {
-      transform: scale(1.1); // Define la transformación al pasar el ratón por encima (puedes ajustar el valor según tus preferencias)
+      transform: scale(1.1); 
     }
   }
   
@@ -118,11 +118,8 @@ main {
   overflow: scroll;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* 3 columnas iguales */
   grid-template-rows: auto;
-  /* filas ajustables */
   grid-gap: 10px;
-  /* espacio entre elementos */
 }
 
 footer {
@@ -179,7 +176,7 @@ h1 {
     margin: 0;
     color: $color-texto-header;
 
-    // Animación de desplazamiento (traslación)
+    // Animación 
     animation: slide 2s linear infinite; 
   
     @keyframes slide {
@@ -204,13 +201,13 @@ nav ul {
     display: flex;
     justify-content: center;
   
-    // Animación de transición
-    transition: transform 0.3s ease-in-out; // Agrega la animación de transición para la propiedad transform
-    transform-origin: center; // Define el punto de origen de la transformación
+    // Animación 
+    transition: transform 0.3s ease-in-out; 
+    transform-origin: center; 
   
-    // Estilos al pasar el ratón por encima
+   
     &:hover {
-      transform: scale(1.1); // Define la transformación al pasar el ratón por encima (puedes ajustar el valor según tus preferencias)
+      transform: scale(1.1); 
     }
   }
   
@@ -265,11 +262,8 @@ main {
   overflow: scroll;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* 3 columnas iguales */
   grid-template-rows: auto;
-  /* filas ajustables */
   grid-gap: 10px;
-  /* espacio entre elementos */
 }
 
 .menu-page #menupizzas {
@@ -284,8 +278,8 @@ main {
  
 
   h2 {
-    color: #fff; // Color blanco
-    text-align: center; // Centrado horizontal
+    color: #fff; 
+    text-align: center; 
   }
 
   .pizza {

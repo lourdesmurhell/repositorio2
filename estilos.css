@@ -94,11 +94,8 @@ main {
   overflow: scroll;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* 3 columnas iguales */
   grid-template-rows: auto;
-  /* filas ajustables */
   grid-gap: 10px;
-  /* espacio entre elementos */
 }
 
 footer {
@@ -215,11 +212,8 @@ main {
   overflow: scroll;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* 3 columnas iguales */
   grid-template-rows: auto;
-  /* filas ajustables */
   grid-gap: 10px;
-  /* espacio entre elementos */
 }
 
 .menu-page #menupizzas {
