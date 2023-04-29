@@ -98,6 +98,13 @@ main {
   grid-gap: 10px;
 }
 
+section {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 footer {
   color: black;
   background-color: #EF476F;
@@ -109,113 +116,7 @@ footer {
   padding-top: 0.25%;
 }
 
-section {
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Estilos de la página index */
-body {
-  background-color: #26547C;
-  margin: 0;
-  background-image: url(https://cdn.pixabay.com/photo/2020/03/21/02/26/pizza-4952508_960_720.jpg);
-  background-size: cover;
-  height: 100%;
-}
-
-header {
-  background-color: #EF476F;
-  padding: 20px;
-  text-align: center;
-  margin-top: 20px;
-}
-
-h1 {
-  font-family: "Rampart One", cursive;
-  margin: 0;
-  color: #FFD166;
-  animation: slide 2s linear infinite;
-}
-@keyframes slide {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-nav ul {
-  list-style: none;
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  transition: transform 0.3s ease-in-out;
-  transform-origin: center;
-}
-nav ul:hover {
-  transform: scale(1.1);
-}
-
-nav li {
-  font-family: "Shantell Sans", cursive;
-  margin: 0 20px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #FFF;
-  font-size: 1.2em;
-}
-
-#intro {
-  color: #FFF;
-  font-family: "Shantell Sans", cursive;
-  font-size: large;
-  padding: 10px;
-  height: 10px;
-  grid-column: 1/-1;
-}
-
-#haciendo-historia,
-#menu,
-#reservas #nona {
-  color: #FFF;
-  font-size: large;
-  position: relative;
-  margin-top: 10px;
-  margin-bottom: 50px;
-}
-
-#haciendo-historia:hover,
-#menu:hover,
-#reservas:hover {
-  background-color: #EF476F;
-  color: white;
-}
-
-p a {
-  color: inherit;
-  text-decoration: none;
-}
-
-main {
-  overflow: auto;
-  height: calc(100% - 120px);
-  overflow: scroll;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-  grid-gap: 10px;
-}
-
+/* Estilos de la página menu*/
 .menu-page #menupizzas {
   display: flex;
   flex-wrap: wrap;

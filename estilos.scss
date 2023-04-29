@@ -122,6 +122,13 @@ main {
   grid-gap: 10px;
 }
 
+section {
+  background-color: $color-fondo-seccion;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px $color-sombra-item;
+}
+
 footer {
   color: black;
   background-color: $color-fondo-header;
@@ -133,139 +140,8 @@ footer {
   padding-top: 0.25%;
 }
 
-section {
-  background-color: $color-fondo-seccion;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px $color-sombra-item;
-}
 
-/* Estilos de la página index */
-
-// Variables
-$color-fondo-body: #26547C;
-$color-fondo-header: #EF476F;
-$color-texto-header: #FFD166;
-$color-fondo-nav: rgba(0, 0, 0, 0.8);
-$color-fondo-seccion: rgba(0, 0, 0, 0.8);
-$color-texto-seccion: white;
-$color-texto-titulo: #FFD166;
-$color-fondo-menu: rgba(0, 0, 0, 0.8);
-$color-texto-menu-titulo: #FFD166;
-$color-fondo-item: rgba(0, 0, 0, 0.8);
-$color-texto-item-titulo: #FFF;
-$color-sombra-item: rgba(0, 0, 0, 0.2);
-
-body {
-  background-color: $color-fondo-body;
-  margin: 0;
-  background-image: url(https://cdn.pixabay.com/photo/2020/03/21/02/26/pizza-4952508_960_720.jpg);
-  background-size: cover;
-  height: 100%;
-}
-
-header {
-  background-color: $color-fondo-header;
-  padding: 20px;
-  text-align: center;
-  margin-top: 20px;
-}
-
-h1 {
-    font-family: 'Rampart One', cursive;
-    margin: 0;
-    color: $color-texto-header;
-
-    // Animación 
-    animation: slide 2s linear infinite; 
-  
-    @keyframes slide {
-        0% {
-            transform: translateY(0); 
-        }
-        50% {
-            transform: translateY(-10px); 
-        }
-        100% {
-            transform: translateY(0); 
-        }
-    }
-}
-
-  
-nav ul {
-    list-style: none;
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  
-    // Animación 
-    transition: transform 0.3s ease-in-out; 
-    transform-origin: center; 
-  
-   
-    &:hover {
-      transform: scale(1.1); 
-    }
-  }
-  
-
-nav li {
-  font-family: 'Shantell Sans', cursive;
-  margin: 0 20px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #FFF;
-  font-size: 1.2em;
-}
-
-#intro {
-  color: #FFF;
-  font-family: 'Shantell Sans', cursive;
-  font-size: large;
-  padding: 10px;
-  height: 10px;
-  grid-column: 1 / -1;
-}
-
-#haciendo-historia,
-#menu,
-#reservas
-#nona {
-  color: #FFF;
-  font-size: large;
-  position: relative;
-  margin-top: 10px;
-  margin-bottom: 50px;
-}
-
-#haciendo-historia:hover,
-#menu:hover,
-#reservas:hover {
-  background-color: $color-fondo-header;
-  color: white;
-}
-
-p a {
-  color: inherit;
-  text-decoration: none;
-}
-
-
-main {
-  overflow: auto;
-  height: calc(100% - 120px);
-  overflow: scroll;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-  grid-gap: 10px;
-}
-
+/* Estilos de la página menu*/
 .menu-page #menupizzas {
   display: flex;
   flex-wrap: wrap;
@@ -341,14 +217,14 @@ main {
 
 /* Reservas */
 
-// Estilos para el título de la reserva
+
 .titulo-reserva {
   color: #FFF;
   text-align: center;
   margin-top: 50px;
 }
 
-// Estilos para el formulario de reserva
+
 .formulario-reserva {
   background-color: $color-fondo-item;
   color: $color-texto-item-titulo;
