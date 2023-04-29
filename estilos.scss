@@ -1,3 +1,148 @@
+
+// Variables
+$color-fondo-body: #26547C;
+$color-fondo-header: #EF476F;
+$color-texto-header: #FFD166;
+$color-fondo-nav: rgba(0, 0, 0, 0.8);
+$color-fondo-seccion: rgba(0, 0, 0, 0.8);
+$color-texto-seccion: white;
+$color-texto-titulo: #FFD166;
+$color-fondo-menu: rgba(0, 0, 0, 0.8);
+$color-texto-menu-titulo: #FFD166;
+$color-fondo-item: rgba(0, 0, 0, 0.8);
+$color-texto-item-titulo: #FFF;
+$color-sombra-item: rgba(0, 0, 0, 0.2);
+
+body {
+  background-color: $color-fondo-body;
+  margin: 0;
+  background-image: url(https://cdn.pixabay.com/photo/2020/03/21/02/26/pizza-4952508_960_720.jpg);
+  background-size: cover;
+  height: 100%;
+}
+
+header {
+  background-color: $color-fondo-header;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+h1 {
+    font-family: 'Rampart One', cursive;
+    margin: 0;
+    color: $color-texto-header;
+
+    // Animación de desplazamiento (traslación)
+    animation: slide 2s linear infinite; 
+  
+    @keyframes slide {
+        0% {
+            transform: translateY(0); 
+        }
+        50% {
+            transform: translateY(-10px); 
+        }
+        100% {
+            transform: translateY(0); 
+        }
+    }
+}
+
+  
+nav ul {
+    list-style: none;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  
+    // Animación de transición
+    transition: transform 0.3s ease-in-out; // Agrega la animación de transición para la propiedad transform
+    transform-origin: center; // Define el punto de origen de la transformación
+  
+    // Estilos al pasar el ratón por encima
+    &:hover {
+      transform: scale(1.1); // Define la transformación al pasar el ratón por encima (puedes ajustar el valor según tus preferencias)
+    }
+  }
+  
+
+nav li {
+  font-family: 'Shantell Sans', cursive;
+  margin: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 1.2em;
+}
+
+#intro {
+  color: #FFF;
+  font-family: 'Shantell Sans', cursive;
+  font-size: large;
+  padding: 10px;
+  height: 10px;
+  grid-column: 1 / -1;
+}
+
+#haciendo-historia,
+#menu,
+#reservas {
+  color: #FFF;
+  font-size: large;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+#haciendo-historia:hover,
+#menu:hover,
+#reservas:hover {
+  background-color: $color-fondo-header;
+  color: white;
+}
+
+p a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+main {
+  overflow: auto;
+  height: calc(100% - 120px);
+  overflow: scroll;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 columnas iguales */
+  grid-template-rows: auto;
+  /* filas ajustables */
+  grid-gap: 10px;
+  /* espacio entre elementos */
+}
+
+footer {
+  color: black;
+  background-color: $color-fondo-header;
+  font-family: sans-serif;
+  font-size: 15px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  padding-top: 0.25%;
+}
+
+section {
+  background-color: $color-fondo-seccion;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px $color-sombra-item;
+}
+
 /* Estilos de la página index */
 
 // Variables
@@ -35,23 +180,22 @@ h1 {
     color: $color-texto-header;
 
     // Animación de desplazamiento (traslación)
-    animation: slide 2s linear infinite; // Agrega la animación de desplazamiento con una duración de 2 segundos, una función de tiempo lineal y la repetición infinita
+    animation: slide 2s linear infinite; 
   
     @keyframes slide {
         0% {
-            transform: translateY(0); // Define la traslación inicial (0 píxeles hacia arriba)
+            transform: translateY(0); 
         }
         50% {
-            transform: translateY(-10px); // Define la traslación intermedia (-10 píxeles hacia arriba)
+            transform: translateY(-10px); 
         }
         100% {
-            transform: translateY(0); // Define la traslación final (0 píxeles hacia arriba)
+            transform: translateY(0); 
         }
     }
 }
 
   
-
 nav ul {
     list-style: none;
     font-family: sans-serif;
@@ -84,18 +228,22 @@ nav a {
 
 #intro {
   color: #FFF;
-  font-family: sans-serif;
-  padding: 2px;
+  font-family: 'Shantell Sans', cursive;
+  font-size: large;
+  padding: 10px;
   height: 10px;
   grid-column: 1 / -1;
 }
 
 #haciendo-historia,
 #menu,
-#reservas {
+#reservas
+#nona {
   color: #FFF;
+  font-size: large;
   position: relative;
-  margin-top: 50px;
+  margin-top: 10px;
+  margin-bottom: 50px;
 }
 
 #haciendo-historia:hover,
@@ -104,6 +252,12 @@ nav a {
   background-color: $color-fondo-header;
   color: white;
 }
+
+p a {
+  color: inherit;
+  text-decoration: none;
+}
+
 
 main {
   overflow: auto;
@@ -114,24 +268,125 @@ main {
   /* 3 columnas iguales */
   grid-template-rows: auto;
   /* filas ajustables */
-  grid-gap: 20px;
+  grid-gap: 10px;
   /* espacio entre elementos */
 }
 
-footer {
-  color: black;
-  background-color: $color-fondo-header;
-  font-family: sans-serif;
-  font-size: 15px;
-  position: fixed;
+.menu-page #menupizzas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
   width: 100%;
-  bottom: 0;
-  padding-top: 0.25%;
+  padding: 20px;
+ 
+
+  h2 {
+    color: #fff; // Color blanco
+    text-align: center; // Centrado horizontal
+  }
+
+  .pizza {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin: 10px 0;
+    overflow: hidden;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    &:hover img {
+      transform: scale(1.1);
+    }
+
+    .pizza-info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      text-align: center;
+      margin: 0;
+    }
+
+
+    h3 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 1rem;
+    }
+  }
 }
 
-section {
-  background-color: $color-fondo-seccion;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px $color-sombra-item;
+/*Haciendo Historia*/
+
+#nona {
+  h2 {
+    color: #fff; // Color blanco
+    text-align: center; // Centrado horizontal
+  }
+  img {
+    width: 500px;
+    height: 700px;
+  }
+}
+
+/*Reservas*/
+.formulario-reserva {
+  width: 100%;
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    &:focus {
+      border-color: #007bff;
+      box-shadow: 0 0 5px #007bff;
+    }
+  }
+
+  .boton {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+    &:hover {
+      background-color: #0062cc;
+    }
+  }
 }
