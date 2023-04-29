@@ -283,12 +283,20 @@ main {
   height: 700px;
 }
 
-/*Reservas*/
+/* Reservas */
+.titulo-reserva {
+  color: #FFF;
+  text-align: center;
+  margin-top: 50px;
+}
+
 .formulario-reserva {
   background-color: rgba(0, 0, 0, 0.8);
   color: #FFF;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
   padding: 20px;
-  margin: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }

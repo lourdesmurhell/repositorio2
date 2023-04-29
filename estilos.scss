@@ -345,13 +345,23 @@ main {
   }
 }
 
-/*Reservas*/
+/* Reservas */
+
+// Estilos para el título de la reserva
+.titulo-reserva {
+  color: #FFF;
+  text-align: center;
+  margin-top: 50px;
+}
+
 // Estilos para el formulario de reserva
 .formulario-reserva {
   background-color: $color-fondo-item;
   color: $color-texto-item-titulo;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
   padding: 20px;
-  margin: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px $color-sombra-item;
 
