@@ -275,9 +275,35 @@ footer {
 }
 
 /*Ubicacion*/
-
 .iframe-mapa {
   width: 100%;
   height: 400px;
   margin-top: 20px;;
 }
+
+/*Responsive*/
+/* index */
+
+// Estilos para versión desktop
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  flex: 1;
+  margin-right: 20px;
+}
+
+// Estilos para versión mobile
+@media only screen and (max-width: 767px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .item {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
