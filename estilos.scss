@@ -13,6 +13,7 @@ $color-fondo-item: rgba(0, 0, 0, 0.8);
 $color-texto-item-titulo: #FFF;
 $color-sombra-item: rgba(0, 0, 0, 0.2);
 
+/*index*/
 body {
   background-color: $color-fondo-body;
   margin: 0;
@@ -140,18 +141,18 @@ footer {
   padding-top: 0.25%;
 }
 
-
-/* Estilos de la página menu*/
+/*menu*/
 .menu-page #menupizzas {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  max-width: 1200px;
   width: 100%;
-  padding: 20px;
- 
+  padding: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 200px;
 
   h2 {
     color: #fff; 
@@ -203,7 +204,6 @@ footer {
 }
 
 /*Haciendo Historia*/
-
 #nona {
   h2 {
     color: #fff; // Color blanco
@@ -216,8 +216,6 @@ footer {
 }
 
 /* Reservas */
-
-
 .titulo-reserva {
   color: #FFF;
   text-align: center;

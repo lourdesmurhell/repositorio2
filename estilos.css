@@ -1,4 +1,4 @@
-@charset "UTF-8";
+/*index*/
 body {
   background-color: #26547C;
   margin: 0;
@@ -116,16 +116,18 @@ footer {
   padding-top: 0.25%;
 }
 
-/* Estilos de la página menu*/
+/*menu*/
 .menu-page #menupizzas {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  max-width: 1200px;
   width: 100%;
-  padding: 20px;
+  padding: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 200px;
 }
 .menu-page #menupizzas h2 {
   color: #fff;
