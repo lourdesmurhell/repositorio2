@@ -239,24 +239,10 @@ footer {
 }
 
 /*Responsive*/
-/* index */
-.container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.item {
-  flex: 1;
-  margin-right: 20px;
-}
-
-@media only screen and (max-width: 767px) {
-  .container {
+@media screen and (max-width: 767px) {
+  main {
+    display: flex;
     flex-direction: column;
-  }
-  .item {
-    margin-right: 0;
-    margin-bottom: 20px;
   }
 }
 
