@@ -20,6 +20,10 @@ h1 {
   color: #FFD166;
   animation: slide 2s linear infinite;
 }
+h1 a {
+  color: inherit;
+  text-decoration: none;
+}
 @keyframes slide {
   0% {
     transform: translateY(0);
