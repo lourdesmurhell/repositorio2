@@ -75,7 +75,7 @@ nav ul {
   
 
 nav li {
-  font-family: 'Shantell Sans', cursive;
+  font-family: 'Shantell Sans', cursive, sans-serif;
   margin: 0 20px;
 }
 
@@ -87,7 +87,7 @@ nav a {
 
 #intro {
   color: #FFF;
-  font-family: 'Shantell Sans', cursive;
+  font-family: 'Shantell Sans', cursive, sans-serif;
   font-size: large;
   padding: 10px;
   height: 10px;
@@ -214,8 +214,8 @@ footer {
 /*Haciendo Historia*/
 #nona {
   h2 {
-    color: #fff; // Color blanco
-    text-align: center; // Centrado horizontal
+    color: #fff; 
+    text-align: center; 
   }
   img {
     width: 500px;
@@ -275,7 +275,7 @@ footer {
     font-size: 16px;
     cursor: pointer;
 
-    // Estilos al pasar el ratón por encima
+    
     &:hover {
       background-color: lighten($color-fondo-menu, 10%);
     }
@@ -291,20 +291,8 @@ footer {
 
 /*Responsive*/
 
-// Estilos para dispositivos de pantalla grande (desktop)
-@media screen and (min-width: 1024px) {
-  // Aquí puedes agregar tus reglas CSS para dispositivos de pantalla grande
-}
+// Mobile
 
-// Estilos para dispositivos de pantalla mediana (tablet)
-@media screen and (max-width: 1023px) and (min-width: 768px) {
-  // Aquí puedes agregar tus reglas CSS para dispositivos de pantalla mediana
-}
-
-// Estilos para dispositivos de pantalla pequeña (mobile)
-@media screen and (max-width: 767px) {
-  // Aquí puedes agregar tus reglas CSS para dispositivos de pantalla pequeña
-}
 @media screen and (max-width: 767px) {
   main {
     display: flex;
